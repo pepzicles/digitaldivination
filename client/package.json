@@ -1,0 +1,20 @@
+{
+  "name": "client",
+  "private": true,
+  "version": "0.0.0",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "sentiment": "node sentiment.js"
+  },
+  "devDependencies": {
+    "rollup": "^3.20.6",
+    "vite": "^4.2.0"
+  },
+  "dependencies": {
+    "sentiment": "^5.0.2"
+  }
+}

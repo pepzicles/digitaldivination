@@ -1,0 +1,13 @@
+let sad1 = "background(0); noStroke(); fill(200, 0, 0); rect(50, 50, 300, 300); fill(0, 0, 200); ellipse(200, 200, 200, 200); fill(0, 200, 0); triangle(50, 350, 200, 150, 350, 350);";
+let sad2 = "background(200); strokeWeight(5);stroke(0);for (let x = 0; x < width; x += 20) {line(x, 0, x, height);}for (let y = 0; y < height; y += 20) {line(0, y, width, y);}for (let i = -width; i < width; i += 20) {line(i, 0, i + width, height);}"
+let sad3 = "background(50); fill(255); let x = 0; for (let i = 0; i < 10; i++) {let y = random(50, 350);text('SUFFER', x, y); x += textWidth('SUFFER');}"
+
+
+let happy1 = "background(200, 200, 250); noStroke(); for (let i = 0; i < 10; i++) {let x = random(width);let y = random(height);let size = random(20, 50);let r = random(100, 200);let g = random(100, 200);let b = random(100, 200);fill(r, g, b);ellipse(x, y, size, size);}"
+let happy2 = "background(255, 200, 200); noStroke();for (let i = 0; i < 10; i++) {let x = random(width);let y = random(height);let size = random(20, 50);let r = random(200, 255);let g = random(200, 255);let b = random(100, 200);fill(r, g, b);ellipse(x, y, size, size);}fill(255, 255, 100);triangle(150, 150, 250, 150, 200, 250);"
+let happy3 = "background(255, 255, 200);noStroke();for (let i = 0; i < 10; i++) {let x = random(width);let y = random(height);let size = random(20, 50);let r = random(200, 255);let g = random(100, 200);let b = random(100, 200);fill(r, g, b);ellipse(x, y, size, size);}for (let i = 0; i < 5; i++) {let x = random(width);let y = random(height);let size = random(20, 50);let r = random(200, 255);let g = random(100, 200);let b = random(100, 200);fill(r, g, b);rect(x, y, size, size);}"
+
+
+let neutral1 = "background(220);noStroke();for (let i = 0; i < 10; i++) {let x = random(width);let y = random(height);let size = random(20, 50);let r = random(150, 200);let g = random(150, 200);let b = random(150, 200);fill(r, g, b);ellipse(x, y, size, size);}for (let i = 0; i < 5; i++) {let x = random(width);let y = random(height);let size = random(20, 50);let r = random(150, 200);let g = random(150, 200);let b = random(150, 200);fill(r, g, b);rect(x, y, size, size);}"
+let neutral2 = "let angle = 0;let spacing = 10;let radius = 50; background(0);colorMode(HSB);for (let i = 0; i < 255; i++) {let x = cos(angle * i) * (radius + spacing * i);let y = sin(angle * i) * (radius + spacing * i);fill(i, 100, 100);ellipse(width / 2 + x, height / 2 + y, 10, 10);} angle += 0.02;}"
+let neutral3 = "let from = color(255, 200, 200);let to = color(200, 200, 255);background(lerpColor(from, to, mouseY/height));translate(width/2, height/2);rotate(millis()*0.001);fill(255);for (i=0; i<100; i+=10){rect(i+5, i, 100, 50);}"
