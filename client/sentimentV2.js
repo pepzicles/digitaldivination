@@ -121,7 +121,9 @@ function sentimentFunction(){
         randomArt = randomHappyArt;
     }   
     //Print out the sentiment into index.html 
-    document.getElementById("sentiment-p").innerHTML = sentimentOutput;
+    //document.getElementById("sentiment-p").innerHTML = sentimentOutput;
+    document.getElementById("sentiment-p").innerHTML = `${sentimentOutput}`
+    
     //Print out the Spotify URL into index.html 
     function changeSong(){
         var SpotifyURL = document.getElementById("spotify-url");
